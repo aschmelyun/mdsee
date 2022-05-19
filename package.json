@@ -1,6 +1,6 @@
 {
     "name": "mdsee",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Easily view Markdown files in the browser, and automatically see any changes.",
     "main": "./lib/index.js",
     "repository": {
@@ -25,6 +25,11 @@
     "bin": {
         "mdsee": "./bin/mdsee.js"
     },
+    "files": [
+        "dist",
+        "lib",
+        "bin"
+    ],
     "preferGlobal": true,
     "author": "aschmelyun",
     "license": "MIT"
