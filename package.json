@@ -1,6 +1,6 @@
 {
     "name": "mdsee",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Easily view Markdown files in the browser, and automatically see any changes.",
     "main": "./lib/index.js",
     "repository": {
