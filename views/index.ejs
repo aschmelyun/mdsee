@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= filename %></title>
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+</head>
+<body class="antialiased">
+    <article class="prose lg:prose-xl mx-auto py-12" id="md"><%- html %></article>
+    <script>
+        const ws = new WebSocket("ws://localhost:8088");
+        ws.onmessage = function (event) {
+            document.getElementById('md').innerHTML = event.data;
+        }
+    </script>
+</body>
+</html>
