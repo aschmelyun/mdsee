@@ -32,6 +32,16 @@ There's a handful of options that you can use to control the behavior:
 
 **Note:** When using the watch feature, a websocket server is started on port `8088`.
 
+## Building Assets
+
+If you're modifying or working with this app locally, you need to build the CSS assets for the styles used when the web server is running. In order to do that, run this command locally:
+
+```bash
+npx tailwindcss -i ./css/app.css -o ./dist/css/app.css --minify
+```
+
+For more information, refer to the Tailwind CSS [CLI documentation](https://tailwindcss.com/docs/installation) guide.
+
 ## Contact
 
 Have an issue? Submit it here! Want to get in touch or recommend a feature? Feel free to reach out to me on [Twitter](https://twitter.com/aschmelyun) for any other questions or comments.
